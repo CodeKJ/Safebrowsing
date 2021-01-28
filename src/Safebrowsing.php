@@ -43,6 +43,7 @@ class Safebrowsing {
         curl_setopt($ch,CURLOPT_POSTFIELDS, json_encode($payload));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch,CURLOPT_CONNECTTIMEOUT,$timeout);
+        curl_setopt($ch, CURLOPT_REFERER, config('safebrowsing.google.referer'));
         curl_setopt($ch, CURLOPT_HTTPHEADER,
             array(
                 'Content-Type: application/json',
