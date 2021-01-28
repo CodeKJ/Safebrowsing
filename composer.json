@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "CodeKJ\\Safebrowsing\\": "src"
+            "Snipe\\Safebrowsing\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CodeKJ\\Safebrowsing\\": "tests"
+            "Snipe\\Safebrowsing\\": "tests"
         }
     },
     "scripts": {
@@ -51,10 +51,10 @@
         },
         "laravel": {
             "providers": [
-                "CodeKJ\\Safebrowsing\\SafebrowsingServiceProvider"
+                "Snipe\\Safebrowsing\\SafebrowsingServiceProvider"
             ],
             "aliases": {
-                "Safebrowsing": "CodeKJ\\Safebrowsing\\Facade\\Safebrowsing"
+                "Safebrowsing": "Snipe\\Safebrowsing\\Facade\\Safebrowsing"
             }
         }
     }
