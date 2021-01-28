@@ -1,5 +1,5 @@
 {
-    "name": "snipe/safebrowsing",
+    "name": "codekj/safebrowsing",
     "type": "library",
     "description": "Laravel package to allow you to easily integrate the Google Safebrowing API into your application.",
     "keywords": [
@@ -18,6 +18,12 @@
             "email": "snipe@snipe.net",
             "homepage": "http://snipe.net",
             "role": "Developer"
+        },
+        {
+            "name": "Kristaps Jaremčuks",
+            "email": "kristaps.jaremcuks@gmail.com",
+            "homepage": "https://github.com/CodeKJ",
+            "role": "Developer"
         }
     ],
     "require": {
@@ -28,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Snipe\\Safebrowsing\\": "src"
+            "CodeKJ\\Safebrowsing\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Snipe\\Safebrowsing\\": "tests"
+            "CodeKJ\\Safebrowsing\\": "tests"
         }
     },
     "scripts": {
@@ -45,10 +51,10 @@
         },
         "laravel": {
             "providers": [
-                "Snipe\\Safebrowsing\\SafebrowsingServiceProvider"
+                "CodeKJ\\Safebrowsing\\SafebrowsingServiceProvider"
             ],
             "aliases": {
-                "Safebrowsing": "Snipe\\Safebrowsing\\Facade\\Safebrowsing"
+                "Safebrowsing": "CodeKJ\\Safebrowsing\\Facade\\Safebrowsing"
             }
         }
     }
