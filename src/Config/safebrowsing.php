@@ -22,6 +22,7 @@ return [
 
     'google' => [
         'api_key' => env('GOOGLE_API_KEY'),
+        'referer' => env('APP_URL'),
         'timeout' => 10,
         'threat_types' => [
             'THREAT_TYPE_UNSPECIFIED',
